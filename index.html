@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,9 +28,12 @@
         body::before {
             content: "";
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: radial-gradient(circle at 20% 30%, rgba(100, 80, 220, 0.15) 0%, transparent 40%),
-                        radial-gradient(circle at 80% 70%, rgba(180, 130, 255, 0.12) 0%, transparent 40%);
+                radial-gradient(circle at 80% 70%, rgba(180, 130, 255, 0.12) 0%, transparent 40%);
             pointer-events: none;
             z-index: -1;
         }
@@ -47,7 +51,7 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .logo {
@@ -125,7 +129,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
             margin-top: 15px;
         }
 
@@ -154,7 +158,7 @@
             align-items: center;
             gap: 10px;
             transition: 0.2s;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 6px 14px rgba(106, 70, 230, 0.5);
         }
 
@@ -195,7 +199,7 @@
             padding: 36px 24px;
             text-align: center;
             transition: 0.25s ease;
-            box-shadow: 0 20px 30px -15px rgba(0,0,0,0.7);
+            box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.7);
         }
 
         .feature-card:hover {
@@ -232,7 +236,8 @@
         }
 
         .discord-smp-link {
-            background: linear-gradient(145deg, #5865F2, #4752c4); /* Discord rengi */
+            background: linear-gradient(145deg, #5865F2, #4752c4);
+            /* Discord rengi */
             border: none;
             color: white;
             font-size: 2.2rem;
@@ -244,7 +249,7 @@
             align-items: center;
             gap: 25px;
             transition: 0.2s;
-            border: 1px solid rgba(255,255,255,0.25);
+            border: 1px solid rgba(255, 255, 255, 0.25);
             box-shadow: 0 12px 28px #2c2f6e;
             letter-spacing: 2px;
         }
@@ -311,7 +316,7 @@
 
         /* footer */
         .footer {
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             padding: 40px 0;
             margin-top: 40px;
             display: flex;
@@ -360,143 +365,198 @@
 
         /* mobil */
         @media (max-width: 700px) {
-            .navbar { flex-direction: column; gap: 20px; }
-            .nav-links { gap: 24px; flex-wrap: wrap; justify-content: center; }
-            .hero h1 { font-size: 3.2rem; }
-            .ip-box { flex-direction: column; background: rgba(20, 25, 38, 0.9); padding: 20px; border-radius: 40px; }
-            .copy-btn { width: 100%; justify-content: center; }
-            .ip-text { font-size: 1.4rem; }
-            .discord-smp-link { font-size: 1.8rem; padding: 20px 40px; gap: 15px; }
-            .discord-smp-link i { font-size: 2.2rem; }
-            .footer { flex-direction: column; gap: 20px; text-align: center; }
-            .social-links a { margin: 0 15px; }
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+
+            .ip-box {
+                flex-direction: column;
+                background: rgba(20, 25, 38, 0.9);
+                padding: 20px;
+                border-radius: 40px;
+            }
+
+            .copy-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .ip-text {
+                font-size: 1.4rem;
+            }
+
+            .discord-smp-link {
+                font-size: 1.8rem;
+                padding: 20px 40px;
+                gap: 15px;
+            }
+
+            .discord-smp-link i {
+                font-size: 2.2rem;
+            }
+
+            .footer {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .social-links a {
+                margin: 0 15px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <!-- navigasyon -->
-    <nav class="navbar">
-        <div class="logo">
-            <i class="fas fa-cubes"></i>
-            <span>Mystic Network</span>
-        </div>
-        <div class="nav-links">
-            <a href="#">Ana Sayfa</a>
-            <a href="#">Özellikler</a>
-            <a href="#">Oyun Modları</a>
-            <a href="#">Mağaza</a>
-            <a href="#">Oy Ver</a>
-        </div>
-    </nav>
-
-    <!-- hero -->
-    <section class="hero">
-        <h1>mistik diyara giriş yap</h1>
-        <p class="tagline">Gelişmiş SMP Sunucusu</p>
-        <!-- IP kutusu (YAKINDA) -->
-        <div class="ip-box">
-            <div class="ip-text">
-                <i class="fas fa-server"></i> YAKINDA!!!
+    <div class="container">
+        <!-- navigasyon -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-cubes"></i>
+                <span>Mystic Network</span>
             </div>
-            <button class="copy-btn" id="copyIpBtn">
-                <i class="far fa-copy"></i> IP'yi Kopyala
-            </button>
-        </div>
-    </section>
+            <div class="nav-links">
+                <a href="#">Ana Sayfa</a>
+                <a href="#">Özellikler</a>
+                <a href="#">Oyun Modları</a>
+                <a href="#">Mağaza</a>
+                <a href="#">Oy Ver</a>
+            </div>
+        </nav>
 
-    <!-- özellikler -->
-    <h2 class="section-title">✦ sunucu özellikleri ✦</h2>
-    <div class="features-grid">
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-            <h3>Hile Koruması</h3>
-            <p>Gelişmiş koruma sistemi, hilecilere asla izin yok.</p>
+        <!-- hero -->
+        <section class="hero">
+            <h1>Mystic Network İle Oyun Seviyeni Bir Üst Düzeye Çıkar!</h1>
+            <p class="tagline">Gelişmiş PvP Sunucusu /NethTrap /Pratice /SMP </p>
+            <!-- IP kutusu (YAKINDA) -->
+            <div class="ip-box">
+                <div class="ip-text">
+                    <i class="fas fa-server"></i> YAKINDA!!!
+                </div>
+                <button class="copy-btn" id="copyIpBtn">
+                    <i class="far fa-copy"></i> IP'yi Kopyala
+                </button>
+            </div>
+        </section>
+
+        <!-- özellikler -->
+        <h2 class="section-title">✦ Sunucu Özellikleri ✦</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Hile Koruması</h3>
+                <p>Gelişmiş koruma sistemi, hilecilere asla izin yok.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Çalışma Süresi %99.9</h3>
+                <p>Profesyonel altyapı sayesinde 7/24 kesintisiz oyun.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-users"></i></div>
+                <h3>Aktif Topluluk</h3>
+                <p>Yardımsever yetkililer.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-crown"></i></div>
+                <h3>Özel Rütbeler</h3>
+                <p>Benzersiz büyüler, avantajlar ve kozmetikler.</p>
+            </div>
         </div>
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-clock"></i></div>
-            <h3>Çalışma Süresi %99.9</h3>
-            <p>Profesyonel altyapı sayesinde 7/24 kesintisiz oyun.</p>
+
+        <!-- OYUN MODLARI: sadece SMP (Discord linki eklendi) -->
+        <div class="smp-container">
+            <!-- Senin Discord linkin buraya eklendi -->
+            <a href="https://discord.gg/ejy2jXsMtb" class="discord-smp-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord"></i> DİSCORD
+            </a>
         </div>
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-users"></i></div>
-            <h3>Aktif Topluluk</h3>
-            <p>Yardımsever yetkililer.</p>
+
+        <!-- yetkili ekibi -->
+        <h2 class="section-title">🛡️  Üst yetkili kadrosu 🛡️</h2>
+        <div class="staff-grid">
+            <div class="staff-card">
+                <div class="staff-avatar"><i class="fas fa-user-astronaut"></i></div>
+                <h4>MahmutX21</h4>
+                <p>Kurucu</p>
+            </div>
+            </h2>
+        <div class="staff-grid">
+            <div class="staff-card">
+                <div class="staff-avatar"><i class="fas fa-user-astronaut"></i></div>
+                <h4>AyranAdam_TR</h4>
+                <p>Developer</p>
+            </div>
+            </h2>
+        <div class="staff-grid">
+            <div class="staff-card">
+                <div class="staff-avatar"><i class="fas fa-user-astronaut"></i></div>
+                <h4>Ferguson1545</h4>
+                <p>Admin</p>
+            </div>
         </div>
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-crown"></i></div>
-            <h3>Özel Rütbeler</h3>
-            <p>Benzersiz büyüler, avantajlar ve kozmetikler.</p>
-        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="copy">© 2026 Mystic Network. Mojang ile bağlantılı değildir.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
     </div>
 
-    <!-- OYUN MODLARI: sadece SMP (Discord linki eklendi) -->
-    <h2 class="section-title">⚔️ oyun modları ⚔️</h2>
-    <div class="smp-container">
-        <!-- Senin Discord linkin buraya eklendi -->
-        <a href="https://discord.gg/ejy2jXsMtb" class="discord-smp-link" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-discord"></i> DİSCORD
-        </a>
-    </div>
+    <!-- kopyalama bildirimi -->
+    <div id="copyNotify" class="copy-notify">✨ Sunucu IP'si panoya kopyalandı!</div>
 
-    <!-- yetkili ekibi -->
-    <h2 class="section-title">🛡️ mystic ekibi</h2>
-    <div class="staff-grid">
-        <div class="staff-card">
-            <div class="staff-avatar"><i class="fas fa-user-astronaut"></i></div>
-            <h4>MahmutX21</h4>
-            <p>Kurucu</p>
-        </div>
-    </div>
+    <!-- JavaScript kopyalama (YAKINDA yazısını kopyalar) -->
+    <script>
+        (function() {
+            const copyBtn = document.getElementById('copyIpBtn');
+            const notify = document.getElementById('copyNotify');
+            // IP metni "YAKINDA!!!" olarak güncellendi
+            const ipText = "YAKINDA!!!";
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="copy">© 2026 Mystic Network. Mojang ile bağlantılı değildir.</div>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-discord"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
-</div>
-
-<!-- kopyalama bildirimi -->
-<div id="copyNotify" class="copy-notify">✨ Sunucu IP'si panoya kopyalandı!</div>
-
-<!-- JavaScript kopyalama (YAKINDA yazısını kopyalar) -->
-<script>
-    (function() {
-        const copyBtn = document.getElementById('copyIpBtn');
-        const notify = document.getElementById('copyNotify');
-        // IP metni "YAKINDA!!!" olarak güncellendi
-        const ipText = "YAKINDA!!!";
-
-        function showNotification() {
-            notify.classList.add('show');
-            setTimeout(() => {
-                notify.classList.remove('show');
-            }, 2000);
-        }
-
-        copyBtn.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(ipText);
-                showNotification();
-            } catch (err) {
-                const textArea = document.createElement('textarea');
-                textArea.value = ipText;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-                showNotification();
+            function showNotification() {
+                notify.classList.add('show');
+                setTimeout(() => {
+                    notify.classList.remove('show');
+                }, 2000);
             }
-        });
-    })();
-</script>
 
-<!-- Discord linkin: https://discord.gg/ejy2jXsMtb (butona eklendi) -->
+            copyBtn.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText(ipText);
+                    showNotification();
+                } catch (err) {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = ipText;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    showNotification();
+                }
+            });
+        })();
+    </script>
+
+    <!-- Discord linkin: https://discord.gg/ejy2jXsMtb (butona eklendi) -->
 </body>
+
 </html>
